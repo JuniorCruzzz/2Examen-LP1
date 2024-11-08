@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autos Rápidos: El sitio para entusiastas de autos de alta velocidad">
+    <title>Autos Rápidos</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Bootstrap CSS & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Custom JS -->
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Autos Rápidos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces de Interés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="dark-mode-toggle">Modo Oscuro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de Marcas de Vehículos -->
+    <div id="brandCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <h2 class="text-center my-4">Marcas Autorizadas</h2>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/564x/8c/e5/c1/8ce5c118cbb3f13de788e91b4ff5a682.jpg" class="d-block mx-auto carousel-image img-fluid" alt="Marca 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/564x/4a/72/a8/4a72a8579bf2b7c5c450fee0e36027f0.jpg" class="d-block mx-auto carousel-image img-fluid" alt="Marca 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/564x/d4/e9/33/d4e9339a48e3cb0101e1eba7ef1127dd.jpg" class="d-block mx-auto carousel-image img-fluid" alt="Marca 3">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/564x/f2/2c/f1/f22cf13fca855379a11c309956d5c3b5.jpg" class="d-block mx-auto carousel-image img-fluid" alt="Marca 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- FlexGrid Interactivo -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="noticias.html" class="flex-grid-item">
+                    <div class="card">
+                        <img src="https://www.iie.org/wp-content/uploads/2023/05/1-media-center-icons_News.png" class="card-img-top img-fluid" alt="Noticias">
+                        <div class="card-body">
+                            <h5 class="card-title">Noticias</h5>
+                            <p class="card-text">Últimas noticias del mundo automotriz.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="enlaces.html" class="flex-grid-item">
+                    <div class="card">
+                        <img src="https://cdn.shopify.com/app-store/listing_images/6284f84cbe95f0bf139c2887154659db/icon/CLuR9ML0lu8CEAE=.png" class="card-img-top img-fluid" alt="Enlaces de Interés">
+                        <div class="card-body">
+                            <h5 class="card-title">Enlaces de Interés</h5>
+                            <p class="card-text">Recursos útiles para los entusiastas de autos.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="contacto.html" class="flex-grid-item">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/564x/3e/3b/c7/3e3bc7dbb0c48adc7bb1c556021602ab.jpg" class="card-img-top img-fluid" alt="Contacto">
+                        <div class="card-body">
+                            <h5 class="card-title">Contáctenos</h5>
+                            <p class="card-text">Estamos aquí para ayudarte.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias con Modal -->
+    <section id="noticias" class="container my-5">
+        <h2 class="text-center mb-4">Noticias del Mundo Automotriz</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="news-card" onclick="openModal('noticia1')">
+                    <div class="news-image" style="background-image: url('https://i.pinimg.com/564x/3d/f8/f1/3df8f11a6e1a7b0537e1dfb16e9de564.jpg');"></div>
+                    <div class="news-info">
+                        <h5 class="news-title">Nuevo Modelo de Superdeportivo 2024</h5>
+                        <p class="news-description">Descubre el nuevo superdeportivo que redefine la velocidad y el diseño en 2024.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="news-card" onclick="openModal('noticia2')">
+                    <div class="news-image" style="background-image: url('https://i.pinimg.com/564x/4e/1d/27/4e1d27b95e3c5d4b6e946dfb49b8b7db.jpg');"></div>
+                    <div class="news-info">
+                        <h5 class="news-title">Avances en Tecnología de Vehículos Eléctricos</h5>
+                        <p class="news-description">Las innovaciones más recientes en el mundo de los autos eléctricos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="news-card" onclick="openModal('noticia3')">
+                    <div class="news-image" style="background-image: url('https://i.pinimg.com/564x/fd/e2/0d/fde20dc5b6d0f8f86e6f7e7a5c76d1d9.jpg');"></div>
+                    <div class="news-info">
+                        <h5 class="news-title">Tendencias en el Diseño Automotriz</h5>
+                        <p class="news-description">Las tendencias de diseño más recientes en la industria automotriz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-light">
+        <p>&copy; 2024 Autos Rápidos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal (Example for Noticias) -->
+    <div id="noticia1" class="modal fade" tabindex="-1" aria-labelledby="noticia1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="noticia1Label">Nuevo Modelo de Superdeportivo 2024</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Detalles del nuevo superdeportivo 2024...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

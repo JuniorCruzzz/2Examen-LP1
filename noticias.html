@@ -1,0 +1,99 @@
+<!-- Sección de Noticias -->
+<section id="noticias" class="container my-5">
+    <h2 class="text-center mb-4">Noticias del Mundo Automotriz</h2>
+    <div class="row">
+        <!-- Tarjeta de Noticia 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="news-card" onclick="openModal('noticia1')">
+                <div class="news-image" style="background-image: url('https://i.pinimg.com/564x/3d/f8/f1/3df8f11a6e1a7b0537e1dfb16e9de564.jpg');"></div>
+                <div class="news-info">
+                    <h5 class="news-title">Nuevo Modelo de Superdeportivo 2024</h5>
+                    <p class="news-description">Descubre el nuevo superdeportivo que redefine la velocidad y el diseño en 2024.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Noticia 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="news-card" onclick="openModal('noticia2')">
+                <div class="news-image" style="background-image: url('https://i.pinimg.com/564x/4e/1d/27/4e1d27b95e3c5d4b6e946dfb49b8b7db.jpg');"></div>
+                <div class="news-info">
+                    <h5 class="news-title">Avances en Tecnología de Vehículos Eléctricos</h5>
+                    <p class="news-description">Las innovaciones más recientes en el mundo de los autos eléctricos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Noticia 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="news-card" onclick="openModal('noticia3')">
+                <div class="news-image" style="background-image: url('https://i.pinimg.com/564x/fd/e2/0d/fde20dc5b6d0f8f86e6f7e7a5c76d1d9.jpg');"></div>
+                <div class="news-info">
+                    <h5 class="news-title">Tendencias en el Diseño Automotriz</h5>
+                    <p class="news-description">Las tendencias de diseño más destacadas para los próximos años.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para mostrar información de la noticia -->
+<div id="noticia1" class="modal fade" tabindex="-1" aria-labelledby="noticia1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="noticia1Label">Nuevo Modelo de Superdeportivo 2024</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Detalles del nuevo superdeportivo 2024...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="noticia2" class="modal fade" tabindex="-1" aria-labelledby="noticia2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="noticia2Label">Avances en Tecnología de Vehículos Eléctricos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Detalles sobre los avances tecnológicos en vehículos eléctricos...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="noticia3" class="modal fade" tabindex="-1" aria-labelledby="noticia3Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="noticia3Label">Tendencias en el Diseño Automotriz</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Explora las últimas tendencias de diseño en la industria automotriz.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript para abrir y cerrar modales -->
+<script>
+    // Función para abrir los modales de noticias
+    function openModal(id) {
+        const modal = new bootstrap.Modal(document.getElementById(id));
+        modal.show();
+    }
+</script>
